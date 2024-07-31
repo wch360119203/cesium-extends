@@ -13,7 +13,8 @@
     "format": "prettier --write .",
     "coverage": "vitest run --coverage",
     "release": "multi-semantic-release --ignore-private-packages=true --deps.bump=inherit",
-    "prepare": "husky install"
+    "prepare": "husky install",
+    "prettier": "prettier --write packages/ & prettier -w doc/"
   },
   "commitlint": {
     "extends": [
@@ -21,7 +22,7 @@
     ]
   },
   "lint-staged": {
-    "*.{md,json}": [
+    "*.{md,json,ts}": [
       "prettier --write --no-error-on-unmatched-pattern"
     ]
   },

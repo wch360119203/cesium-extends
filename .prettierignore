@@ -1,3 +1,5 @@
 .dumi
 dist
 .turbo
+node_modules
+*.md
